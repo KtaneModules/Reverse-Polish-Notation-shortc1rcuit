@@ -1,0 +1,12 @@
+Reverse Polish Notation
+5 5+3 3+*9+
+
+Module ID: reversePolishNotation
+
+Created by Short_c1rcuit
+Idea by Rdzanu
+
+Manual available here: https://ktane.timwi.de/HTML/Reverse%20Polish%20Notation.html
+
+Build 1.0 notes:
+Initial release

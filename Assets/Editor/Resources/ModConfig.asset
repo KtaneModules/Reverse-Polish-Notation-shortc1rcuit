@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
+  m_Name: ModConfig
+  m_EditorClassIdentifier: 
+  id: revPolNot
+  title: Reverse Polish Notation
+  author: short_c1rcuit
+  description: "Reverse Polish Notation\n5 5+3 3+*9+\n\nModule ID: revPolNot\n\r\nCreated
+    by Short_c1rcuit\r\nIdea by Rdzanu\n\r\nManual available here: https://ktane.timwi.de/HTML/Reverse%20Polish%20Notation.html\n\r\nBuild
+    1.0 notes:\r\nInitial release"
+  version: 1.0
+  outputFolder: build
+  previewImage: {fileID: 2800000, guid: 9009597829ee5074a85c5f95725cdad2, type: 3}
