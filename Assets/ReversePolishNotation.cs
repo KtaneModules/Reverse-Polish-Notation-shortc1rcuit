@@ -234,6 +234,11 @@ public class ReversePolishNotation : MonoBehaviour
             {
                 //Works out what the letter means and then adds it to the stack
                 stack.Add(DecipherLetter(equation[i], equation));
+                //After the calculation if any number becomes 0 add 1 to it
+                if (stack[stack.Count - 1] == 0)
+                {
+                    stack[stack.Count - 1] = 1;
+                }
                 Debug.LogFormat("[Reverse Polish Notation #{0}] {1} returns {2}", moduleId, equation[i], stack[stack.Count - 1]);
             }
             else

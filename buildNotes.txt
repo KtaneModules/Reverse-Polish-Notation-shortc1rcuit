@@ -10,3 +10,6 @@ Manual available here: https://ktane.timwi.de/HTML/Reverse%20Polish%20Notation.h
 
 Build 1.0 notes:
 Initial release
+
+Build 1.1 notes:
+Added the "if 0 add 1 rule" that I somehow missed in the several readings of the manual that I did
