@@ -17,7 +17,8 @@ MonoBehaviour:
   description: "Reverse Polish Notation\r\n5 5+3 3+*9+\r\n\r\nModule ID: reversePolishNotation\r\n\r\nCreated
     by Short_c1rcuit\r\nIdea by Rdzanu\r\n\r\nManual available here: https://ktane.timwi.de/HTML/Reverse%20Polish%20Notation.html\r\n\r\nBuild
     1.0 notes:\r\nInitial release\r\n\r\nBuild 1.1 notes:\r\nAdded the \"if 0 add
-    1 rule\" that I somehow missed in the several readings of the manual that I did"
-  version: 1.1
+    1 rule\" that I somehow missed in the several readings of the manual that I did\n\nBuild
+    1.2 notes:\nFixed timekeeping bug."
+  version: 1.2
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 9009597829ee5074a85c5f95725cdad2, type: 3}

@@ -13,3 +13,6 @@ Initial release
 
 Build 1.1 notes:
 Added the "if 0 add 1 rule" that I somehow missed in the several readings of the manual that I did
+
+Build 1.2 notes:
+Fixed timekeeping bug.

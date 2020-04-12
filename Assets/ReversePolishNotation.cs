@@ -112,13 +112,14 @@ public class ReversePolishNotation : MonoBehaviour
             KMSelectable pressedKey = key;
             key.OnInteract += delegate () { KeyPress(pressedKey); return false; };
         }
+        GetComponent<KMBombModule>().OnActivate += OnActivate;
     }
 
-    void Start ()
+    void OnActivate()
     {
         startingTime = (int)bomb.GetTime() / 60;
         StartCoroutine(UpdateStages());
-	}
+    }
 
     IEnumerator UpdateStages()
     {
