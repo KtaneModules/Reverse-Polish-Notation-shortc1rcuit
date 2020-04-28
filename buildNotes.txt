@@ -16,3 +16,6 @@ Added the "if 0 add 1 rule" that I somehow missed in the several readings of the
 
 Build 1.2 notes:
 Fixed timekeeping bug.
+
+Build 1.3 notes:
+Fixed the absence of solve sound effects
