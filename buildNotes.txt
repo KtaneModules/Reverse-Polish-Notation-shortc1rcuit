@@ -19,3 +19,6 @@ Fixed timekeeping bug.
 
 Build 1.3 notes:
 Fixed the absence of solve sound effects
+
+Build 1.4 notes:
+Added an upper limit on the length of the input
