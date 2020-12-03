@@ -135,7 +135,7 @@ public class ReversePolishNotation : MonoBehaviour
 			stages[i].material = Stagecolours[0];
 
 			//Stage 1 has 5 characters, then 7, then 9
-			solution = SolveStage(GenerateStage(2 * i + 5));
+			solution = SolveStage(GenerateStage((2 * i) + 5));
 
 			//Waits for the stage to update
 			while (stage == i)
@@ -280,8 +280,8 @@ public class ReversePolishNotation : MonoBehaviour
 				}
 			}
 		}
-		Debug.LogFormat("[Reverse Polish Notation #{0}] The solution is {1}", moduleId, Math.Round(Math.Abs(stack[0]) % 1000000, 3, MidpointRounding.AwayFromZero));
-		return Math.Round(Math.Abs(stack[0]) % 1000000, 3, MidpointRounding.AwayFromZero);
+		Debug.LogFormat("[Reverse Polish Notation #{0}] The solution is {1}", moduleId, (double)Math.Round((decimal)Math.Abs(stack[0]) % 1000000, 3, MidpointRounding.AwayFromZero));
+		return (double)Math.Round((decimal)Math.Abs(stack[0]) % 1000000, 3, MidpointRounding.AwayFromZero);
 	}
 
 	double DecipherLetter(string letter, string[] equation)
@@ -404,7 +404,7 @@ public class ReversePolishNotation : MonoBehaviour
 		{
 			//Upper limit for the text size to stop text going into other modules
 			//(Looking at you Xatra)
-			if (answer.text.Length < 6)
+			if (answer.text.Length < 10)
 			{
 				//Adds the number to the end of the sting
 				answer.text += number.ToString();
