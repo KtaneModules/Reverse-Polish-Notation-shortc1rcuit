@@ -33,6 +33,13 @@ public class ReversePolishNotation : MonoBehaviour
 	//Object that show the stage number
 	public Renderer[] stages;
 
+	string[][] usedChars =
+	{
+		new string[]{},
+		new string[]{},
+		new string[]{}
+	};
+
 	//Solution to the equation
 	double solution;
 
@@ -188,6 +195,8 @@ public class ReversePolishNotation : MonoBehaviour
 
 		problem.text = string.Join(" ", equation);
 		Debug.LogFormat("[Reverse Polish Notation #{0}] The equation is {1}", moduleId, string.Join(" ", equation));
+
+		usedChars[stage] = Array.FindAll(equation, x => Regex.IsMatch(x, @"\w"));
 
 		return equation;
 	}
