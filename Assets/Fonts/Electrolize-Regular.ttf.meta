@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1124ac63d2174234cab2713ff6e942a1
+guid: 0113c88f809afb1448888036f628747a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Gugi
+  fontName: Electrolize
   fontNames:
-  - Gugi
+  - Electrolize
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

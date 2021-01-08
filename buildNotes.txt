@@ -25,3 +25,6 @@ Added an upper limit on the length of the input
 
 Build 1.5 notes:
 Fixed issues with rounding and the upper limit of the length
+
+Build 1.7 notes:
+Changed font
