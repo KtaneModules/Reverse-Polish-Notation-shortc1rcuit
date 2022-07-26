@@ -105,6 +105,51 @@ public class ReversePolishNotation : MonoBehaviour
 		}
 	}
 
+	private IEnumerator TwitchHandleForcedSolve()
+    {	
+		for (int st = stage; st < 3; st++) // For each stage, starting at the current stage...
+        {
+            int currentIndex = 0;
+			// Declare "currentIndex" as our current position in the input.
+			// (0 entered digits? currentIndex = 0. 3 entered chracters? currentIndex = 3.)
+			// The purpose of "currentIndex" is to try to press the least amount of keys as possible.
+			// For example, if we have "3.6" as our input, and the answer is "3.667", all we should do is press 6, 7, and submit.
+
+			// For each character in our current input...
+			for (int inputCheck = 0; inputCheck < answer.text.Length; inputCheck++)
+            {
+				// If our current input is longer than the solution, or,
+				// If the "inputCheck" position of our input is not equal to the "inputCheck" position of the solution...
+				if (answer.text.Length > solution.ToString().Length || answer.text[inputCheck] != solution.ToString()[inputCheck])
+				{
+					// Reset, and set currentIndex back to 0. (As we need to enter the input from the start.)
+					keypad[12].OnInteract();
+					currentIndex = 0;
+					yield return new WaitForSeconds(0.2f);
+					// Stop iterating through the check if our input is incorrect.
+					goto doInput;
+				}
+				// Otherwise, add 1 to currentIndex.
+				currentIndex++;
+            }
+
+			doInput:
+			// For each character in the solution, starting at the position of our current input...
+			for (int input = currentIndex; input < solution.ToString().Length; input++)
+            {
+				// Press the buttons that result in our solution.
+                keypad["0123456789.".IndexOf(solution.ToString()[input])].OnInteract();
+				yield return new WaitForSeconds(0.1f);
+            }
+			// Press the submit button.
+			keypad[11].OnInteract();
+
+			// If the module isn't solved, wait. (This avoids an extra 0.2 second wait after the module is solved.)
+			if (!moduleSolved)
+				yield return new WaitForSeconds(0.2f);
+        }
+    }
+
 	void Awake()
 	{
 		problem.text = "";
