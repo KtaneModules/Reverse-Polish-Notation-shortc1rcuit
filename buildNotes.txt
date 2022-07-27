@@ -28,3 +28,6 @@ Fixed issues with rounding and the upper limit of the length
 
 Build 1.7 notes:
 Changed font
+
+Build 1.8 notes:
+Added TP Autosolver (credit: QuinnWuest)

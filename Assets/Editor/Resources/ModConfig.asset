@@ -21,7 +21,8 @@ MonoBehaviour:
     1.2 notes:\nFixed timekeeping bug.\n\nBuild 1.3 notes:\nFixed the absence of solve
     sound effects\n\nBuild 1.4 notes:\nAdded an upper limit on the length of the input\n\nBuild
     1.5 notes:\nFixed issues with rounding and the upper limit of the length\n\nBuild
-    1.6 notes:\nAdded souv support\n\nBuild 1.7 notes:\nChanged font"
-  version: 1.7
+    1.6 notes:\nAdded souv support\n\nBuild 1.7 notes:\nChanged font\n\nBuild 1.8
+    notes:\nAdded TP Autosolver (credit: QuinnWuest)"
+  version: 1.8
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 9009597829ee5074a85c5f95725cdad2, type: 3}
